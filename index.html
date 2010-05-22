@@ -33,60 +33,13 @@
       li: 0,
       Toolbelt: {}
     };
-    window.google.sn = "webhp";
-    window.google.timers = {
-      load: {
-        t: {
-          start: (new Date).getTime()
-        }
-      }
-    };
-    try {
-      window.google.pt = window.chrome && window.chrome.csi && Math.floor(window.chrome.csi().pageT);
-    } catch (u) {}
-    window.google.jsrt_kill = 1;
-    var _gjwl = location;
 
-    function _gjuc() {
-      var b = _gjwl.href.indexOf("#");
-      if (b >= 0) {
-        var a = _gjwl.href.substring(b + 1);
-        if (/(^|&)q=/.test(a) && a.indexOf("#") == -1 && !/(^|&)cad=h($|&)/.test(a)) {
-          _gjwl.replace("/search?" + a.replace(/(^|&)fp=[^&]*/g, "") + "&cad=h");
-          return 1
-        }
-      }
-      return 0
-    }
-    function _gjp() {
-      !(window._gjwl.hash && window._gjuc()) && setTimeout(_gjp, 500)
-    };
     window._gjp && _gjp()
   </script>
   
   <script>
-    google.y = {};
-    google.x = function (e, g) {
-      google.y[e.id] = [e, g];
-      return false
-    };
     if (!window.google) window.google = {};
-    window.google.crm = {};
-    window.google.cri = 0;
-    window.clk = function (e, f, g, k, l, b, m) {
-      if (document.images) {
-        var a = encodeURIComponent || escape,
-          c = new Image,
-          h = window.google.cri++;
-        window.google.crm[h] = c;
-        c.onerror = (c.onload = (c.onabort = function () {
-          delete window.google.crm[h]
-        }));
-        if (b && b.substring(0, 6) != "&sig2=") b = "&sig2=" + b;
-        c.src = ["/url?sa=T", "", f ? "&oi=" + a(f) : "", g ? "&cad=" + a(g) : "", "&ct=", a(k || "res"), "&cd=", a(l), "&ved=", a(m), e ? "&url=" + a(e.replace(/#.*/, "")).replace(/\+/g, "%2B") : "", "&ei=", "zNr2S6z3C4f0eNui1bYK", b].join("")
-      }
-      return true
-    };
+  
     window.gbar = {
       qs: function () {},
       tg: function (e) {
@@ -103,10 +56,9 @@
 </head>
 
 
-<body bgcolor='#ffffff' text='#000000' link='#0000cc' vlink='#551a8b' alink='#ff0000' onLoad="document.f.q.focus();if(document.images)new Image().src='/images/srpr/nav_logo13.png'">
+<body bgcolor='#FFF' text='#000000' link='#0000cc' vlink='#551a8b' alink='#ff0000' onLoad="document.f.q.focus();if(document.images)new Image().src='/images/srpr/nav_logo13.png'">
 <textarea id='csi' style='display:none'></textarea>
-<iframe name='wgjf' style='display:none'>
-</iframe>
+
 
 <center>
 <div id='lga'>
@@ -185,10 +137,6 @@
 </div>
 <div id='xjsi'>
 	<script>
-    if (google.y) google.y.first = [];
-    if (google.y) google.y.first = [];
-    google.dstr = [];
-    google.rein = [];
     window.setTimeout(function () {
       var a = document.createElement("script");
       // Google src originally links to /extern_js/f/SOME_LONG_HASH/ANOTHER_HASH.js
@@ -197,68 +145,7 @@
       (document.getElementById("xjsd") || document.body).appendChild(a);
       if (google.timers && google.timers.load.t) google.timers.load.t.xjsls = (new Date).getTime();
     }, 0);;
-    google.neegg = 1;
-    google.y.first.push(function () {
-      google.ac.i(document.f, document.f.q, '', '', '', {
-        o: 1,
-        sw: 1
-      });
-      (function () {
-        var h, i, j = 1,
-          k = google.time(),
-          l = [];
-
-        function m(a, f) {
-          var b = [];
-          for (var c = 0, e; e = a[c++];) {
-            var d = document.getElementById(e);
-            d && b.push(d)
-          }
-          for (var c = 0, g; g = f[c++];) b = b.concat(n(g[0], g[1]));
-          for (var c = 0; b[c]; c++) b[c] = [b[c], "opacity", 0, 1, 0, ""];
-          return b
-        }
-        function n(a, f) {
-          var b = [],
-            c = new RegExp("(^|\\s)" + f + "($|\\s)");
-          for (var e = 0, d, g = document.getElementsByTagName(a); d =
-          g[e++];) c.test(d.className) && b.push(d);
-          return b
-        }
-        google.fade = function (a) {
-          if (google.fx && j) {
-            a = a || window.event;
-            var f = 1,
-              b = google.time() - k;
-            if (a && a.type == "mousemove") {
-              var c = a.clientX,
-                e = a.clientY;
-              f = (h || i) && (h != c || i != e) && b > 600;
-              h = c;
-              i = e
-            }
-            if (f) {
-              j = 0;
-              google.fx.animate(600, m(["fctr", "ghead", "pmocntr", "sbl", "tba", "tbe"], [
-                ["span", "fade"],
-                ["div", "fade"],
-                ["div", "gbh"]
-              ]));
-              for (var d = 0; d < l.length; ++d) if (typeof l[d] == "function") l[d]()
-            }
-          }
-        };
-        google.addFadeNotifier = function (a) {
-          l.push(a);
-          if (!j) a()
-        };
-      })();;
-      google.History && google.History.initialize('/')
-    });
-    if (google.j && google.j.en && google.j.xi) {
-      window.setTimeout(google.j.xi, 0);
-      google.fade = null;
-    }
+    
     google.pml && google.pml();
   </script>
 </div>
